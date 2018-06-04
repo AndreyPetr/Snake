@@ -57,6 +57,13 @@ void gotoxy(int,int);
 void snake_place(snake *snake1, snake_pos *pos1);
 void snake_move(snake *snake1, snake_pos *pos1, food *food1, int*);
 void move_tail(snake *snake1, snake_pos *pos1);
+void move_head(snake *snake1, snake_pos *pos1);
+void food_print(food *food1);
+int game_over(snake *snake1, snake_pos *pos1);
+void set_borders();
+void print_score(int*);
+int kbhit(void);
+
 
 int main()
 {
